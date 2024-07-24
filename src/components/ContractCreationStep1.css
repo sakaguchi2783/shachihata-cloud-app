@@ -17,7 +17,7 @@
   
   .contract-type input[type="radio"] {
     transform: scale(1.5); /* ラジオボタンのサイズを大きくする */
-    margin-right: 10px; /* ラジオボタンをテキストの左側に配置 */
+    margin-right: 110px; /* ラジオボタンをテキストの左側に配置 */
   }
   
   .contract-type label {
