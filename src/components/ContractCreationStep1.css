@@ -8,6 +8,7 @@
   .contract-type {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc; /* 枠を追加 */
@@ -16,13 +17,15 @@
   }
   
   .contract-type input[type="radio"] {
-    transform: scale(1.5); /* ラジオボタンのサイズを大きくする */
-    margin-right: 110px; /* ラジオボタンをテキストの左側に配置 */
+    margin-left: auto;
+    margin-right: auto;
+    order: 1;
   }
   
   .contract-type label {
     flex-grow: 1;
     text-align: left;
+    order: 2;
   }
   
   .contract-name {
@@ -30,7 +33,7 @@
   }
   
   .contract-description {
-    margin-left: 20px;
     color: #666;
+    margin-left: 20px;
   }
   
