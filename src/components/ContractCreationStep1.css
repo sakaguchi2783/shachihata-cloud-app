@@ -1,0 +1,36 @@
+.contract-types {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contract-type {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc; /* 枠を追加 */
+    border-radius: 4px; /* 角を丸くする */
+    background-color: #f9f9f9; /* 背景色を追加 */
+  }
+  
+  .contract-type input[type="radio"] {
+    transform: scale(1.5); /* ラジオボタンのサイズを大きくする */
+    margin-right: 10px; /* ラジオボタンをテキストの左側に配置 */
+  }
+  
+  .contract-type label {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .contract-name {
+    font-weight: bold;
+  }
+  
+  .contract-description {
+    margin-left: 20px;
+    color: #666;
+  }
+  
