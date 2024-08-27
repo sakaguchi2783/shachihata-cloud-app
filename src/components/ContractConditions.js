@@ -51,8 +51,8 @@ function ContractConditions({ onSubmit }) {
           </div>
         </div>
       ))}
-      <button type="button" onClick={handleAddCondition}>条件を追加</button>
-      <button type="submit">送信</button>
+      <button type="button" className="add-condition-button"onClick={handleAddCondition}>条件を追加</button>
+      <button type="submit" className="submit-button">送信</button>
     </form>
   );
 }

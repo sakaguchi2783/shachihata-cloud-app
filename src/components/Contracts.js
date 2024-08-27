@@ -9,11 +9,11 @@ function Contracts({ contractData }) {
         <p>{contractData.conditions}</p>
       </div>
       <div>
-        <h3>期限:</h3>
+        <h3>期限（この条件を守るのはいつまでですか？）:</h3>
         <p>{contractData.deadline}</p>
       </div>
       <div>
-        <h3>優先順位:</h3>
+        <h3>優先順位（この条件の優先順位をつけてみましょう。例：１←一番上に表記されます）:</h3>
         <p>{contractData.priority}</p>
       </div>
     </div>

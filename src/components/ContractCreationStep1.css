@@ -37,3 +37,10 @@
     margin-left: 20px;
   }
   
+  .add-condition-button {
+    margin-bottom: 40px; /* 「条件を追加」と「送信」の間にスペースを追加 */
+  }
+  
+  .submit-button {
+    margin-top: 40px; /* 「条件を追加」ボタンと送信ボタンを区別するためのスペースを追加 */
+  }
