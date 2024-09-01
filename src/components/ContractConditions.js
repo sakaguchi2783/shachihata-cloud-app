@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ContractCreationStep1.css';
 
 function ContractConditions({ onSubmit }) {
   const [conditions, setConditions] = useState([]);
@@ -21,10 +22,14 @@ function ContractConditions({ onSubmit }) {
   return (
     <form onSubmit={handleSubmit}>
       <h3>契約条件を入力してください</h3>
+      <p>①まず『条件を追加』を押して3点（内容・期日・順位）を記入ください。</p>
+      <p>②条件を追加したい場合は『条件を追加』を何回もタップしてください。</p>
+      <p>③最後に『送信』を押して完成です。</p>
+      <p>　</p>
       {conditions.map((condition, index) => (
         <div key={index}>
           <div>
-            <label>相手に守ってほしい条件や内容は？</label>
+            <label>「相手に守ってほしい条件や内容は？」</label>
             <textarea
               value={condition.description}
               onChange={(e) => handleConditionChange(index, 'description', e.target.value)}
@@ -32,7 +37,7 @@ function ContractConditions({ onSubmit }) {
             />
           </div>
           <div>
-            <label>期限:</label>
+            <label>「期限は？」（いつまで守ってほしい？）</label>
             <input
               type="date"
               value={condition.deadline}
@@ -41,7 +46,7 @@ function ContractConditions({ onSubmit }) {
             />
           </div>
           <div>
-            <label>優先順位:</label>
+            <label>「優先順位は？」（この約束事は何番目に大事？）</label>
             <input
               type="text"
               value={condition.priority}

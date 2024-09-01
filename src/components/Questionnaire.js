@@ -22,7 +22,7 @@ function Questionnaire({ onSubmit }) {
         />
       </div>
       <div>
-        <label>これらが守られる期限を設定してください:</label>
+        <label>期限:</label>
         <input
           type="date"
           value={deadline}
@@ -31,7 +31,7 @@ function Questionnaire({ onSubmit }) {
         />
       </div>
       <div>
-        <label>優先順位を記入してください:</label>
+        <label>優先順位:</label>
         <input
           type="text"
           value={priority}
