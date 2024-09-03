@@ -8,7 +8,7 @@ function ContractDocument({ contractType, partyA, partyB, conditions }) {
 
   const handleDownloadPdf = async () => {
     const canvas = await html2canvas(documentRef.current, {
-      scale: 2, // 解像度を上げる
+      scale: 1, // 解像度を上げる
       useCORS: true,
     });
     const imgData = canvas.toDataURL('image/png');
@@ -30,8 +30,8 @@ function ContractDocument({ contractType, partyA, partyB, conditions }) {
         style={{
           border: '1px solid black',
           padding: '20px',
-          width: '210mm',
-          minHeight: '297mm',
+          width: '150mm',
+          minHeight: '240mm',
           margin: '0 auto',
           backgroundColor: '#fff',
           boxSizing: 'border-box',
